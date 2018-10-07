@@ -155,11 +155,11 @@ body{background: #333;}
 	  		<td colspan="2"><span class="logo"></span></td>
 	  	</tr>
 	  	<tr>
-	  		<td class="tip"><span>账号2:</span></td>
+	  		<td class="tip"><span>账号:</span></td>
 	  		<td class="input"><input class="input" type="text" name="username" value="${data}" placeholder="请输入用户名"></td>
 	  	</tr>
 	  	<tr>
-	  		<td class="tip"><span>密码2:</span></td>
+	  		<td class="tip"><span>密码:</span></td>
 	  		<td class="input"><input class="input" type="password" name="password" placeholder="请输入密码"></td>
 	  	</tr>
 	  	<tr>
