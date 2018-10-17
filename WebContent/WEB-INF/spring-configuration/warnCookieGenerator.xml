@@ -29,7 +29,6 @@
 	</description>
 	
 	<bean id="warnCookieGenerator" class="org.jasig.cas.web.support.CookieRetrievingCookieGenerator"
-		<!-- p:cookieSecure="true"  为了去除https认证改为false-->
 		p:cookieSecure="false" 
 		p:cookieMaxAge="-1"
 		p:cookieName="CASPRIVACY"
