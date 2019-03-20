@@ -75,6 +75,7 @@ public class MyQueryDatabaseAuthenticationHandler extends AbstractJdbcUsernamePa
 			throw new PreventedException(e);
 		}
 		return createHandlerResult(credential, new SimplePrincipal(username), null);
+//		return createHandlerResult(credential, new SimplePrincipal("张三"), null);
 	}
 
 	public String getSql() {

@@ -34,57 +34,61 @@
 <link rel="shortcut icon" href="images/logo.png">
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <style type="text/css">
-body{background: #333;}
+body{background: #2F4056;}
 .container{
-   width: 420px;
-   height: 300px;
-   margin: 10% auto 0px auto;
+    width: 466px;
+    height: 432px;
+    margin: 5% auto 0px auto;
+    background-color: white;
+     border-radius:4px;
 }
 .container table{
-	width:400px;
-	border: 4px solid #555A60;
+	width:465px;
+	/* border: 4px solid #555A60; */
     border-radius:4px;
 	margin: 10px auto 0px auto;
 }
 .container table tr.logo{
-	text-align: center;
-	height: 60px;
+	height: 90px;
 }
 .container table td.tip span{
 	display: inline-block;
-	height: 30px;
-	line-height: 26px;
+    height: 30px;
+    line-height: 27px;
+    font-size: 16px;
 	/* background: #555A60;
 	border-radius: 3px; */
 }
 .container table td.login-info{
-	text-align: center;
+	/* text-align: center; */
 	height: 30px;
 	font-size: 14px;
-	color: #a94442;
+	color: #FF5722;
 }
-
+span.err{
+	display: inline-block;
+    width: 100%;
+    text-align: center;
+}
 .container table td{
-	text-align:center;
-	height: 50px;
+	height: 75px;
 }
-.container table td.tip{
-	text-align: right;
-	width:80px;
-	color: #fff;
+.container table td.logo{
+	padding-left:180px;
 }
 .container table td.input{
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 38px;
 }
 .container table td input.input{
-	width: 250px;
-	height: 30px;
-	border: 1px solid #555A60;
-	border-radius: 2px;
-	background-color: #333;
-	color:#fff;
-	padding-left: 5px;
+	width: 340px;
+    height: 34px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    /* background-color: #333; */
+    color: #c2c2c2;
+    padding-left: 38px;
+    font-size: 14px;
 }
 .container table td input.btn{
 	border: solid 0px #555A60;
@@ -93,34 +97,33 @@ body{background: #333;}
 	color: #fff;
 }
 .container table td input.submit{
-	margin-left:7px;
-	width:240px;
-	height: 30px;
+	margin-left:39px;
+	width:306px;
+	height: 34px;
 	border: solid 0px #555A60;
-	border-radius: 2px;
-	background: #555A60;
-	color: #fff;
+	border-radius: 6px;
+	background: #5FB878;
+	color: white;
 }
 .container table td input.reset{
-	width:60px;
-	height: 30px;
-	border-radius: 2px;
-	background: #555A60;
-	color: #333;
+	width:67px;
+	height: 34px;
+	border-radius: 6px;
+	border:1px solid #5FB878;
+	/* background: #5FB878; */
+	background: white;
+	color: #5FB878;
 }
 
-.container table td input:HOVER{
-	border: solid 1px #fff;
-	border-radius: 2px;
-	
-}
 .container table td span.logo{
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background: url("images/lock.png");
+	width: 100px;
+	height: 100px;
+	background: url("images/logo.png");
 	background-size:100% 100%;
-	margin-top: 10px;
+	margin-top: 18px;
+	/* border: 1px solid #2F4056;
+	border-radius: 20px; */
 }
 
 
@@ -152,24 +155,22 @@ body{background: #333;}
 	  
 	  <table>
 	  	<tr class="logo">
-	  		<td colspan="2"><span class="logo"></span></td>
+	  		<td class="logo"><span class="logo"></span></td>
 	  	</tr>
 	  	<tr>
-	  		<td class="tip"><span>账号:</span></td>
 	  		<td class="input"><input class="input" type="text" name="username" value="${data}" placeholder="请输入用户名"></td>
 	  	</tr>
 	  	<tr>
-	  		<td class="tip"><span>密码:</span></td>
 	  		<td class="input"><input class="input" type="password" name="password" placeholder="请输入密码"></td>
 	  	</tr>
 	  	<tr>
-	  		<td colspan="2">
+	  		<td style="margin-top: 50px;height: 70px;">
 		  		<input class="btn submit" value="登     录" type="submit" />
 		  		<input class="btn reset" value="重  置" type="reset" />
 	  		</td>
 	  	</tr>
 	  	<tr>
-	  		<td class="login-info" colspan="2">
+	  		<td class="login-info">
 		  		<!-- 以下这一句form:errors取出登录失败的异常信息 -->
 			    <span class="err"><form:errors/></span>
 	  		</td>
